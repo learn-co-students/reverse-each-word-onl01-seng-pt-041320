@@ -6,8 +6,7 @@
 # end
 
 def reverse_each_word(flip)
-  trying = []
-  flip = flip.split
-  flip.collect {|flop| trying << flop.reverse}
-  trying.join(" ")
+  reversed = []
+  flip.split.collect {|flop| reversed << flop.reverse}
+  reversed.join(" ")
 end
